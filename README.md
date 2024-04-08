@@ -38,7 +38,7 @@ For detailed usage instructions and API documentation, please refer to the [docu
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue on GitHub. See the [Code of conduct](CODE_OF_CONDUCT) for more details.
+Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue on GitHub. See the [Code of conduct](CODE_OF_CONDUCT.md) for more details.
 
 ## License
 

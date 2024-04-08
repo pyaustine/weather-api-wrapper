@@ -19,6 +19,8 @@ pip install weather-api-wrapper
 
 ## Usage
 
+## Usage
+
 ```python
 from weather_api_wrapper import WeatherClient
 
@@ -33,6 +35,15 @@ forecast = client.get_weather_forecast(city='New York')
 
 # Get historical weather data for a specific city and date range
 historical_data = client.get_historical_weather(city={'lat': 51.51, 'lon': -0.13}, start_date='2024-04-01', end_date='2024-04-07')
+
+# Get air pollution data for a specific city
+air_pollution = client.get_air_pollution(city={'lat': 51.51, 'lon': -0.13})
+
+# Get UV index data for a specific city
+uv_index = client.get_uv_index(city={'lat': 51.51, 'lon': -0.13})
+
+# Get weather alerts for a specific city
+weather_alerts = client.get_weather_alerts(city='New York')
 ```
 Replace 'your_api_key' with your actual OpenWeatherMap API key.
 

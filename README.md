@@ -34,7 +34,7 @@ Replace 'your_api_key' with your actual OpenWeatherMap API key.
 
 ## Documentation
 
-For detailed usage instructions and API documentation, please refer to the [documentation](https://github.com/yourusername/weather-api-wrapper).
+For detailed usage instructions and API documentation, please refer to the [documentation](https://github.com/pyaustine/weather-api-wrapper).
 
 ## Contributing
 

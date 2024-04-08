@@ -1,6 +1,6 @@
 # Weather API Wrapper
 
-![GitHub](https://img.shields.io/github/license/pyaustine/weather-api-wrapper)
+[![License](https://img.shields.io/github/license/pyaustine/weather-api-wrapper)](LICENSE)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyaustine/weather-api-wrapper)
 ![GitHub last commit](https://img.shields.io/github/last-commit/pyaustine/weather-api-wrapper)
 ![GitHub issues](https://img.shields.io/github/issues/pyaustine/weather-api-wrapper)

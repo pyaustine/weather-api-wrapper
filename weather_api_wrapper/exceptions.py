@@ -1,0 +1,2 @@
+class WeatherAPIError(Exception):
+    pass

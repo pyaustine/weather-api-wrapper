@@ -1,5 +1,11 @@
 # Weather API Wrapper
+
 ![GitHub](https://img.shields.io/github/license/pyaustine/weather-api-wrapper)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyaustine/weather-api-wrapper)
+![GitHub last commit](https://img.shields.io/github/last-commit/pyaustine/weather-api-wrapper)
+![GitHub issues](https://img.shields.io/github/issues/pyaustine/weather-api-wrapper)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pyaustine/weather-api-wrapper)
+
 
 A Python wrapper for the OpenWeatherMap API, enabling easy access to weather data for any location.
 

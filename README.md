@@ -30,3 +30,16 @@ forecast = client.get_weather_forecast(city='New York')
 historical_data = client.get_historical_weather(city={'lat': 51.51, 'lon': -0.13}, start_date='2024-04-01', end_date='2024-04-07')
 ```
 Replace 'your_api_key' with your actual OpenWeatherMap API key.
+
+
+## Documentation
+
+For detailed usage instructions and API documentation, please refer to the [documentation](https://github.com/yourusername/weather-api-wrapper).
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue on GitHub.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

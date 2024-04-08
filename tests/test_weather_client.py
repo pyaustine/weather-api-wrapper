@@ -55,5 +55,41 @@ class TestWeatherClient(unittest.TestCase):
         self.assertEqual(data['hourly'][0]['weather'][0]['main'], "Clouds")
         self.assertEqual(data['hourly'][0]['weather'][0]['description'], "overcast clouds")
 
+    @patch('weather_api_wrapper.weather_client.requests.get')
+    def test_get_air_pollution(self, mock_get):
+        mock_response = requests.models.Response()
+        mock_response.status_code = 200
+        mock_response.json = lambda: {"list": [{"main": {"aqi": 1}}]}
+        mock_get.return_value = mock_response
+
+        client = WeatherClient(api_key="fake_api_key")
+        data = client.get_air_pollution(city={"lon": -0.13, "lat": 51.51})
+
+        self.assertEqual(data['list'][0]['main']['aqi'], 1)
+
+    @patch('weather_api_wrapper.weather_client.requests.get')
+    def test_get_uv_index(self, mock_get):
+        mock_response = requests.models.Response()
+        mock_response.status_code = 200
+        mock_response.json = lambda: 5.6
+        mock_get.return_value = mock_response
+
+        client = WeatherClient(api_key="fake_api_key")
+        data = client.get_uv_index(city={"lon": -0.13, "lat": 51.51})
+
+        self.assertEqual(data, 5.6)
+
+    @patch('weather_api_wrapper.weather_client.requests.get')
+    def test_get_weather_alerts(self, mock_get):
+        mock_response = requests.models.Response()
+        mock_response.status_code = 200
+        mock_response.json = lambda: {"alerts": [{"event": "Thunderstorm"}]}
+        mock_get.return_value = mock_response
+
+        client = WeatherClient(api_key="fake_api_key")
+        data = client.get_weather_alerts(city="New York")
+
+        self.assertEqual(data['alerts'][0]['event'], "Thunderstorm")
+
 if __name__ == '__main__':
     unittest.main()

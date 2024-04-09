@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='weather_api_wrapper',
-    version='0.1',
+    version='0.2.0',
     packages=find_packages(),
     install_requires=[
         'requests',
@@ -16,4 +16,10 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
+    entry_points={
+        'console_scripts': [
+            'weather-cli=weather_api_wrapper.cli:main',
+        ],
+    },
 )
+

@@ -46,6 +46,17 @@ weather_alerts = client.get_weather_alerts(city='New York')
 Replace 'your_api_key' with your actual OpenWeatherMap API key.
 
 
+### Command Line Interface (CLI)
+
+You can also use the command-line interface to retrieve weather data:
+
+```bash
+weather-cli --api-key your_api_key London
+```
+
+
+
+
 ## Documentation
 
 For detailed usage instructions and API documentation, please refer to the [documentation](https://github.com/pyaustine/weather-api-wrapper).

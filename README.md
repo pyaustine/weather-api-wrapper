@@ -16,6 +16,10 @@ You can install the Weather API Wrapper using pip:
 ```bash
 pip install weather-api-wrapper
 ```
+## Features
+- Provides a Python interface to interact with the OpenWeatherMap API.
+- Retrieve current weather, weather forecast, historical weather data, air pollution data, UV index data, and weather alerts for a specified location.
+- Command-line interface (CLI) for easy access to weather data.
 
 ## Usage
 

@@ -19,8 +19,6 @@ pip install weather-api-wrapper
 
 ## Usage
 
-## Usage
-
 ```python
 from weather_api_wrapper import WeatherClient
 

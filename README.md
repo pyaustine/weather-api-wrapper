@@ -58,7 +58,7 @@ You can also use the command-line interface to retrieve weather data:
 weather-cli --api-key your_api_key London
 ```
 
-Replace 'your_api_key' with your actual OpenWeatherMap API key and 'London' with the city for which you want to retrieve weather data.
+Replace 'your_api_key' with your actual [OpenWeatherMap API key](www.openweather.org) and 'London' with the city for which you want to retrieve weather data.
 
 The CLI supports the following commands:
 

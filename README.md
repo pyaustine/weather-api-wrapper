@@ -47,7 +47,7 @@ uv_index = client.get_uv_index(city={'lat': 51.51, 'lon': -0.13})
 # Get weather alerts for a specific city
 weather_alerts = client.get_weather_alerts(city='New York')
 ```
-Replace 'your_api_key' with your actual OpenWeatherMap API key.
+Replace `your_api_key` with your actual OpenWeatherMap API key.
 
 
 ## Command Line Interface (CLI)

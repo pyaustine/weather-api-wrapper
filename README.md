@@ -6,7 +6,6 @@
 ![GitHub issues](https://img.shields.io/github/issues/pyaustine/weather-api-wrapper)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/pyaustine/weather-api-wrapper)
 
-
 A Python wrapper for the OpenWeatherMap API, enabling easy access to weather data for any location.
 
 ## Installation
@@ -16,7 +15,9 @@ You can install the Weather API Wrapper using pip:
 ```bash
 pip install weather-api-wrapper
 ```
+
 ## Features
+
 - Provides a Python interface to interact with the OpenWeatherMap API.
 - Retrieve current weather, weather forecast, historical weather data, air pollution data, UV index data, and weather alerts for a specified location.
 - Command-line interface (CLI) for easy access to weather data.
@@ -47,8 +48,8 @@ uv_index = client.get_uv_index(city={'lat': 51.51, 'lon': -0.13})
 # Get weather alerts for a specific city
 weather_alerts = client.get_weather_alerts(city='New York')
 ```
-Replace `your_api_key` with your actual OpenWeatherMap API key.
 
+Replace `your_api_key` with your actual OpenWeatherMap API key.
 
 ## Command Line Interface (CLI)
 
@@ -58,7 +59,7 @@ You can also use the command-line interface to retrieve weather data:
 weather-cli --api-key your_api_key London
 ```
 
-Replace 'your_api_key' with your actual [OpenWeatherMap API key](www.openweather.org) and 'London' with the city for which you want to retrieve weather data.
+Replace 'your_api_key' with your actual [OpenWeatherMap API key](https://openweathermap.org/api) and 'London' with the city for which you want to retrieve weather data.
 
 The CLI supports the following commands:
 
@@ -68,7 +69,6 @@ The CLI supports the following commands:
 - `weather-cli --api-key your_api_key --pollution London`: Fetches air pollution data for a specified city.
 - `weather-cli --api-key your_api_key --uv London`: Fetches UV index data for a specified city.
 - `weather-cli --api-key your_api_key --alerts London`: Fetches weather alerts for a specified city.
-
 
 ## Documentation
 

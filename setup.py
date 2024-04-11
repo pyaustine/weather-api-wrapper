@@ -3,8 +3,8 @@ import subprocess
 import os
 
 wrapper_version = (
-    subprocess.check_output(['git', 'describe', '--tags'], stdout=subprocess.PIPE)
-    .stdout.decode('utf-8')
+    subprocess.run(["git", "describe", "--tags"], stdout=subprocess.PIPE)
+    .stdout.decode("utf-8")
     .strip()
 )
 

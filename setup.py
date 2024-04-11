@@ -14,7 +14,7 @@ if "-" in wrapper_version:
     # so change it to: "1.3.3+.git.gdf81228"
     # see: https://www.python.org/pep-0440/#local-version-segments
     v,i,s = wrapper_version.split("-")
-    wrapper_version = v + "+" + i + ".git." + s
+    wrapper_version =  v + "+" + i + ".git." + s
 
 assert "-" not in wrapper_version
 assert "." in wrapper_version

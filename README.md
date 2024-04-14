@@ -58,9 +58,8 @@ You can also use the command-line interface to retrieve weather data:
 ```bash
 weather-cli --api-key <your_api_key> <city>
 ```
-For example
 
-Replace 'your_api_key' with your actual [OpenWeatherMap API key](https://openweathermap.org/api) and 'London' with the city for which you want to retrieve weather data.
+Note: Replace '<your_api_key>' with your actual [OpenWeatherMap API key](https://openweathermap.org/api) and '<city>' with the city for which you want to retrieve weather data.
 
 The CLI supports the following commands:
 
